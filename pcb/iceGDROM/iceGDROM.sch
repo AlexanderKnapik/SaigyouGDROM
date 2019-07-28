@@ -329,14 +329,14 @@ CD_CLK
 Text Label 1200 5500 0    50   ~ 0
 G_RST
 $Comp
-L Connector_Generic:Conn_02x22_Odd_Even J2
+L Connector_Generic:Conn_02x20_Odd_Even J2
 U 1 1 5D4290BF
-P 4100 6400
-F 0 "J2" H 4150 7617 50  0000 C CNN
-F 1 "Conn_02x22_Odd_Even" H 4150 7526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x22_P2.54mm_Vertical_SMD" H 4100 6400 50  0001 C CNN
-F 3 "~" H 4100 6400 50  0001 C CNN
-	1    4100 6400
+P 4100 6300
+F 0 "J2" H 4150 7517 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 4150 7426 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 4100 6300 50  0001 C CNN
+F 3 "~" H 4100 6300 50  0001 C CNN
+	1    4100 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -378,7 +378,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 7300 3600 7300
 Wire Wire Line
-	3900 7400 3600 7400
+	3900 7650 3600 7650
 Wire Wire Line
 	4400 5500 4700 5500
 Wire Wire Line
@@ -402,7 +402,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 7200 4700 7200
 Wire Wire Line
-	4400 7400 4700 7400
+	4400 7650 4700 7650
 Text Label 3600 6200 0    50   ~ 0
 D0
 Text Label 3600 6100 0    50   ~ 0
@@ -440,14 +440,14 @@ D15
 NoConn ~ 4400 6300
 NoConn ~ 4400 6900
 NoConn ~ 4400 7000
-NoConn ~ 4400 7500
+NoConn ~ 4400 7750
 Text Label 4700 6700 2    50   ~ 0
 CSEL
 Text Label 4700 7100 2    50   ~ 0
 A2
 Text Label 4700 7200 2    50   ~ 0
 CS1n
-Text Label 4700 7400 2    50   ~ 0
+Text Label 4700 7650 2    50   ~ 0
 VMOTOR
 Text Label 3600 6400 0    50   ~ 0
 DMARQ
@@ -469,12 +469,12 @@ Text Label 3600 7200 0    50   ~ 0
 CS0n
 Text Label 3600 7300 0    50   ~ 0
 ACTIVEn
-Text Label 3600 7400 0    50   ~ 0
+Text Label 3600 7650 0    50   ~ 0
 VLOGIC
 Wire Wire Line
 	3450 6300 3900 6300
 Wire Wire Line
-	3450 7500 3900 7500
+	3450 7750 3900 7750
 Wire Wire Line
 	4400 6400 4850 6400
 Wire Wire Line
@@ -502,33 +502,28 @@ Connection ~ 4850 6800
 Wire Wire Line
 	4850 6800 4850 7300
 Wire Wire Line
-	4850 7300 4850 7650
+	4850 7300 4850 7900
 Connection ~ 4850 7300
-Wire Wire Line
-	3450 6300 3450 7500
-Connection ~ 3450 7500
-Wire Wire Line
-	3450 7500 3450 7650
 $Comp
 L power:GND #PWR019
 U 1 1 5D48A170
-P 3450 7650
-F 0 "#PWR019" H 3450 7400 50  0001 C CNN
-F 1 "GND" H 3455 7477 50  0000 C CNN
-F 2 "" H 3450 7650 50  0001 C CNN
-F 3 "" H 3450 7650 50  0001 C CNN
-	1    3450 7650
+P 3450 7900
+F 0 "#PWR019" H 3450 7650 50  0001 C CNN
+F 1 "GND" H 3455 7727 50  0000 C CNN
+F 2 "" H 3450 7900 50  0001 C CNN
+F 3 "" H 3450 7900 50  0001 C CNN
+	1    3450 7900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 5D48A55F
-P 4850 7650
-F 0 "#PWR022" H 4850 7400 50  0001 C CNN
-F 1 "GND" H 4855 7477 50  0000 C CNN
-F 2 "" H 4850 7650 50  0001 C CNN
-F 3 "" H 4850 7650 50  0001 C CNN
-	1    4850 7650
+P 4850 7900
+F 0 "#PWR022" H 4850 7650 50  0001 C CNN
+F 1 "GND" H 4855 7727 50  0000 C CNN
+F 2 "" H 4850 7900 50  0001 C CNN
+F 3 "" H 4850 7900 50  0001 C CNN
+	1    4850 7900
 	1    0    0    -1  
 $EndComp
 NoConn ~ 12050 2700
@@ -2494,7 +2489,7 @@ U 1 1 5D987645
 P 6900 5850
 F 0 "TP33" H 6950 6000 50  0000 L CNN
 F 1 "TestPoint" H 6958 5877 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7100 5850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 5850 50  0001 C CNN
 F 3 "~" H 7100 5850 50  0001 C CNN
 	1    6900 5850
 	1    0    0    -1  
@@ -2560,7 +2555,7 @@ U 1 1 5DCE593B
 P 8100 1850
 F 0 "TP40" H 8158 1922 50  0000 L CNN
 F 1 "TestPoint" H 8158 1877 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 8300 1850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8300 1850 50  0001 C CNN
 F 3 "~" H 8300 1850 50  0001 C CNN
 	1    8100 1850
 	-1   0    0    -1  
@@ -2571,7 +2566,7 @@ U 1 1 5DD24713
 P 6150 1850
 F 0 "TP32" H 6208 1922 50  0000 L CNN
 F 1 "TestPoint" H 6208 1877 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6350 1850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6350 1850 50  0001 C CNN
 F 3 "~" H 6350 1850 50  0001 C CNN
 	1    6150 1850
 	1    0    0    -1  
@@ -2583,17 +2578,6 @@ Wire Wire Line
 	6350 7650 6350 7600
 Wire Wire Line
 	6350 8500 6350 8450
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DEBD709
-P 5350 9800
-F 0 "H1" H 5450 9846 50  0000 L CNN
-F 1 "MountingHole" H 5450 9755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5350 9800 50  0001 C CNN
-F 3 "~" H 5350 9800 50  0001 C CNN
-	1    5350 9800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:Fiducial FID1
 U 1 1 5DEBDCFC
@@ -3095,7 +3079,7 @@ U 1 1 5E1537AA
 P 6900 7300
 F 0 "TP34" H 6958 7418 50  0000 L CNN
 F 1 "TestPoint" H 6958 7327 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7100 7300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 7300 50  0001 C CNN
 F 3 "~" H 7100 7300 50  0001 C CNN
 	1    6900 7300
 	1    0    0    -1  
@@ -3106,7 +3090,7 @@ U 1 1 5E158B39
 P 6900 8150
 F 0 "TP35" H 6958 8268 50  0000 L CNN
 F 1 "TestPoint" H 6958 8177 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7100 8150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 8150 50  0001 C CNN
 F 3 "~" H 7100 8150 50  0001 C CNN
 	1    6900 8150
 	1    0    0    -1  
@@ -3116,10 +3100,10 @@ Wire Wire Line
 Wire Wire Line
 	14900 7900 14800 7900
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
+L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 5E3A3915
 P 14500 7800
-F 0 "J4" H 14550 8125 50  0000 C CNN
+F 0 "J5" H 14550 8125 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 14550 8126 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 14500 7800 50  0001 C CNN
 F 3 "~" H 14500 7800 50  0001 C CNN
@@ -3160,7 +3144,7 @@ U 1 1 5E51DD4B
 P 5100 1950
 F 0 "TP23" H 5253 2005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 1960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 1950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 1950 50  0001 C CNN
 F 3 "~" H 5300 1950 50  0001 C CNN
 	1    5100 1950
 	1    0    0    -1  
@@ -3171,7 +3155,7 @@ U 1 1 5E51DD51
 P 5100 2050
 F 0 "TP24" H 5253 2105 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2060 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2050 50  0001 C CNN
 F 3 "~" H 5300 2050 50  0001 C CNN
 	1    5100 2050
 	1    0    0    -1  
@@ -3182,7 +3166,7 @@ U 1 1 5E51DD57
 P 5100 2150
 F 0 "TP25" H 5253 2205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2150 50  0001 C CNN
 F 3 "~" H 5300 2150 50  0001 C CNN
 	1    5100 2150
 	1    0    0    -1  
@@ -3193,7 +3177,7 @@ U 1 1 5E51DD5D
 P 5100 2250
 F 0 "TP26" H 5253 2305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2250 50  0001 C CNN
 F 3 "~" H 5300 2250 50  0001 C CNN
 	1    5100 2250
 	1    0    0    -1  
@@ -3204,7 +3188,7 @@ U 1 1 5E51DD63
 P 5100 2350
 F 0 "TP27" H 5253 2405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2350 50  0001 C CNN
 F 3 "~" H 5300 2350 50  0001 C CNN
 	1    5100 2350
 	1    0    0    -1  
@@ -3245,7 +3229,7 @@ U 1 1 5E6FDEFA
 P 5100 2450
 F 0 "TP28" H 5253 2505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2450 50  0001 C CNN
 F 3 "~" H 5300 2450 50  0001 C CNN
 	1    5100 2450
 	1    0    0    -1  
@@ -3256,7 +3240,7 @@ U 1 1 5E6FDF00
 P 5100 2550
 F 0 "TP29" H 5253 2605 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2560 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2550 50  0001 C CNN
 F 3 "~" H 5300 2550 50  0001 C CNN
 	1    5100 2550
 	1    0    0    -1  
@@ -3267,7 +3251,7 @@ U 1 1 5E6FDF06
 P 5100 2650
 F 0 "TP30" H 5253 2705 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2660 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2650 50  0001 C CNN
 F 3 "~" H 5300 2650 50  0001 C CNN
 	1    5100 2650
 	1    0    0    -1  
@@ -3278,7 +3262,7 @@ U 1 1 5E6FDF0C
 P 5100 2750
 F 0 "TP31" H 5253 2805 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5253 2760 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5300 2750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 2750 50  0001 C CNN
 F 3 "~" H 5300 2750 50  0001 C CNN
 	1    5100 2750
 	1    0    0    -1  
@@ -3383,7 +3367,7 @@ U 1 1 5EB7B151
 P 3550 1950
 F 0 "TP22" H 3703 2005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 3703 1960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3750 1950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3750 1950 50  0001 C CNN
 F 3 "~" H 3750 1950 50  0001 C CNN
 	1    3550 1950
 	1    0    0    -1  
@@ -3413,7 +3397,7 @@ U 1 1 5ECFB9C7
 P 2750 1950
 F 0 "TP1" H 2903 2005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 1960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 1950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 1950 50  0001 C CNN
 F 3 "~" H 2950 1950 50  0001 C CNN
 	1    2750 1950
 	1    0    0    -1  
@@ -3426,7 +3410,7 @@ U 1 1 5E475AA3
 P 2750 4050
 F 0 "TP21" H 2903 4105 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 4060 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 4050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 4050 50  0001 C CNN
 F 3 "~" H 2950 4050 50  0001 C CNN
 	1    2750 4050
 	1    0    0    -1  
@@ -3437,7 +3421,7 @@ U 1 1 5E475A9D
 P 2750 3950
 F 0 "TP20" H 2903 4005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3950 50  0001 C CNN
 F 3 "~" H 2950 3950 50  0001 C CNN
 	1    2750 3950
 	1    0    0    -1  
@@ -3456,7 +3440,7 @@ U 1 1 5E250991
 P 2750 3850
 F 0 "TP19" H 2903 3905 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3860 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3850 50  0001 C CNN
 F 3 "~" H 2950 3850 50  0001 C CNN
 	1    2750 3850
 	1    0    0    -1  
@@ -3467,7 +3451,7 @@ U 1 1 5E2226CD
 P 2750 3750
 F 0 "TP18" H 2903 3805 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3760 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3750 50  0001 C CNN
 F 3 "~" H 2950 3750 50  0001 C CNN
 	1    2750 3750
 	1    0    0    -1  
@@ -3478,7 +3462,7 @@ U 1 1 5E2226C7
 P 2750 3650
 F 0 "TP17" H 2903 3705 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3660 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3650 50  0001 C CNN
 F 3 "~" H 2950 3650 50  0001 C CNN
 	1    2750 3650
 	1    0    0    -1  
@@ -3489,7 +3473,7 @@ U 1 1 5E2226C1
 P 2750 3550
 F 0 "TP16" H 2903 3605 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3560 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3550 50  0001 C CNN
 F 3 "~" H 2950 3550 50  0001 C CNN
 	1    2750 3550
 	1    0    0    -1  
@@ -3500,7 +3484,7 @@ U 1 1 5E2226BB
 P 2750 3450
 F 0 "TP15" H 2903 3505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3450 50  0001 C CNN
 F 3 "~" H 2950 3450 50  0001 C CNN
 	1    2750 3450
 	1    0    0    -1  
@@ -3511,7 +3495,7 @@ U 1 1 5E2226B5
 P 2750 3350
 F 0 "TP14" H 2903 3405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3350 50  0001 C CNN
 F 3 "~" H 2950 3350 50  0001 C CNN
 	1    2750 3350
 	1    0    0    -1  
@@ -3522,7 +3506,7 @@ U 1 1 5E2226AF
 P 2750 3250
 F 0 "TP13" H 2903 3305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3250 50  0001 C CNN
 F 3 "~" H 2950 3250 50  0001 C CNN
 	1    2750 3250
 	1    0    0    -1  
@@ -3533,7 +3517,7 @@ U 1 1 5E2226A9
 P 2750 3150
 F 0 "TP12" H 2903 3205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 3160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 3150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 3150 50  0001 C CNN
 F 3 "~" H 2950 3150 50  0001 C CNN
 	1    2750 3150
 	1    0    0    -1  
@@ -3544,7 +3528,7 @@ U 1 1 5E17F13A
 P 2750 2950
 F 0 "TP11" H 2903 3005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2950 50  0001 C CNN
 F 3 "~" H 2950 2950 50  0001 C CNN
 	1    2750 2950
 	1    0    0    -1  
@@ -3555,7 +3539,7 @@ U 1 1 5E17F134
 P 2750 2850
 F 0 "TP10" H 2903 2905 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2860 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2850 50  0001 C CNN
 F 3 "~" H 2950 2850 50  0001 C CNN
 	1    2750 2850
 	1    0    0    -1  
@@ -3566,7 +3550,7 @@ U 1 1 5E17F12E
 P 2750 2750
 F 0 "TP9" H 2903 2805 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2760 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2750 50  0001 C CNN
 F 3 "~" H 2950 2750 50  0001 C CNN
 	1    2750 2750
 	1    0    0    -1  
@@ -3577,7 +3561,7 @@ U 1 1 5E17F128
 P 2750 2650
 F 0 "TP8" H 2903 2705 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2660 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2650 50  0001 C CNN
 F 3 "~" H 2950 2650 50  0001 C CNN
 	1    2750 2650
 	1    0    0    -1  
@@ -3588,7 +3572,7 @@ U 1 1 5E17F122
 P 2750 2550
 F 0 "TP7" H 2903 2605 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2560 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2550 50  0001 C CNN
 F 3 "~" H 2950 2550 50  0001 C CNN
 	1    2750 2550
 	1    0    0    -1  
@@ -3599,7 +3583,7 @@ U 1 1 5E17F11C
 P 2750 2450
 F 0 "TP6" H 2903 2505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2450 50  0001 C CNN
 F 3 "~" H 2950 2450 50  0001 C CNN
 	1    2750 2450
 	1    0    0    -1  
@@ -3610,7 +3594,7 @@ U 1 1 5E17F116
 P 2750 2350
 F 0 "TP5" H 2903 2405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2350 50  0001 C CNN
 F 3 "~" H 2950 2350 50  0001 C CNN
 	1    2750 2350
 	1    0    0    -1  
@@ -3621,7 +3605,7 @@ U 1 1 5E17F110
 P 2750 2250
 F 0 "TP4" H 2903 2305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2250 50  0001 C CNN
 F 3 "~" H 2950 2250 50  0001 C CNN
 	1    2750 2250
 	1    0    0    -1  
@@ -3632,7 +3616,7 @@ U 1 1 5E17F10A
 P 2750 2150
 F 0 "TP3" H 2903 2205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2150 50  0001 C CNN
 F 3 "~" H 2950 2150 50  0001 C CNN
 	1    2750 2150
 	1    0    0    -1  
@@ -3643,7 +3627,7 @@ U 1 1 5E17F104
 P 2750 2050
 F 0 "TP2" H 2903 2105 50  0000 L CNN
 F 1 "TestPoint_Probe" H 2903 2060 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2950 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2950 2050 50  0001 C CNN
 F 3 "~" H 2950 2050 50  0001 C CNN
 	1    2750 2050
 	1    0    0    -1  
@@ -3881,10 +3865,10 @@ F 3 "~" H 9300 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J3
+L Connector_Generic:Conn_02x06_Top_Bottom J4
 U 1 1 5F7243DF
 P 8650 9350
-F 0 "J3" H 8700 9767 50  0000 C CNN
+F 0 "J4" H 8700 9767 50  0000 C CNN
 F 1 "PMOD" H 8700 9676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 8650 9350 50  0001 C CNN
 F 3 "~" H 8650 9350 50  0001 C CNN
@@ -4026,7 +4010,7 @@ U 1 1 5DFE67DB
 P 10200 3950
 F 0 "TP63" H 10353 4005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3950 50  0001 C CNN
 F 3 "~" H 10400 3950 50  0001 C CNN
 	1    10200 3950
 	1    0    0    -1  
@@ -4037,7 +4021,7 @@ U 1 1 5DFE67D5
 P 10200 3850
 F 0 "TP62" H 10353 3905 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3860 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3850 50  0001 C CNN
 F 3 "~" H 10400 3850 50  0001 C CNN
 	1    10200 3850
 	1    0    0    -1  
@@ -4048,7 +4032,7 @@ U 1 1 5DFE67CF
 P 10200 3750
 F 0 "TP61" H 10353 3805 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3760 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3750 50  0001 C CNN
 F 3 "~" H 10400 3750 50  0001 C CNN
 	1    10200 3750
 	1    0    0    -1  
@@ -4059,7 +4043,7 @@ U 1 1 5DFE67C9
 P 10200 3650
 F 0 "TP60" H 10353 3705 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3660 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3650 50  0001 C CNN
 F 3 "~" H 10400 3650 50  0001 C CNN
 	1    10200 3650
 	1    0    0    -1  
@@ -4070,7 +4054,7 @@ U 1 1 5DFA5DF0
 P 10200 3350
 F 0 "TP59" H 10353 3405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3350 50  0001 C CNN
 F 3 "~" H 10400 3350 50  0001 C CNN
 	1    10200 3350
 	1    0    0    -1  
@@ -4081,7 +4065,7 @@ U 1 1 5DFA5DEA
 P 10200 3250
 F 0 "TP58" H 10353 3305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3250 50  0001 C CNN
 F 3 "~" H 10400 3250 50  0001 C CNN
 	1    10200 3250
 	1    0    0    -1  
@@ -4092,7 +4076,7 @@ U 1 1 5DFA5DE4
 P 10200 3150
 F 0 "TP57" H 10353 3205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3150 50  0001 C CNN
 F 3 "~" H 10400 3150 50  0001 C CNN
 	1    10200 3150
 	1    0    0    -1  
@@ -4103,7 +4087,7 @@ U 1 1 5DF6DC32
 P 10200 3050
 F 0 "TP56" H 10353 3105 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 3060 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 3050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 3050 50  0001 C CNN
 F 3 "~" H 10400 3050 50  0001 C CNN
 	1    10200 3050
 	1    0    0    -1  
@@ -4114,7 +4098,7 @@ U 1 1 5DF6DC2C
 P 10200 2950
 F 0 "TP55" H 10353 3005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2950 50  0001 C CNN
 F 3 "~" H 10400 2950 50  0001 C CNN
 	1    10200 2950
 	1    0    0    -1  
@@ -4125,7 +4109,7 @@ U 1 1 5DF6DC26
 P 10200 2850
 F 0 "TP54" H 10353 2905 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2860 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2850 50  0001 C CNN
 F 3 "~" H 10400 2850 50  0001 C CNN
 	1    10200 2850
 	1    0    0    -1  
@@ -4136,7 +4120,7 @@ U 1 1 5DF34EEE
 P 10200 2750
 F 0 "TP53" H 10353 2805 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2760 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2750 50  0001 C CNN
 F 3 "~" H 10400 2750 50  0001 C CNN
 	1    10200 2750
 	1    0    0    -1  
@@ -4147,7 +4131,7 @@ U 1 1 5DF34EE8
 P 10200 2650
 F 0 "TP52" H 10353 2705 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2660 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2650 50  0001 C CNN
 F 3 "~" H 10400 2650 50  0001 C CNN
 	1    10200 2650
 	1    0    0    -1  
@@ -4158,7 +4142,7 @@ U 1 1 5DF34EE2
 P 10200 2550
 F 0 "TP51" H 10353 2605 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2560 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2550 50  0001 C CNN
 F 3 "~" H 10400 2550 50  0001 C CNN
 	1    10200 2550
 	1    0    0    -1  
@@ -4169,7 +4153,7 @@ U 1 1 5DEFCE1F
 P 10200 2450
 F 0 "TP50" H 10353 2505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2450 50  0001 C CNN
 F 3 "~" H 10400 2450 50  0001 C CNN
 	1    10200 2450
 	1    0    0    -1  
@@ -4180,7 +4164,7 @@ U 1 1 5DEFCE19
 P 10200 2350
 F 0 "TP49" H 10353 2405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2350 50  0001 C CNN
 F 3 "~" H 10400 2350 50  0001 C CNN
 	1    10200 2350
 	1    0    0    -1  
@@ -4191,7 +4175,7 @@ U 1 1 5DEFCE13
 P 10200 2250
 F 0 "TP48" H 10353 2305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2250 50  0001 C CNN
 F 3 "~" H 10400 2250 50  0001 C CNN
 	1    10200 2250
 	1    0    0    -1  
@@ -4202,7 +4186,7 @@ U 1 1 5DEF9B50
 P 10200 2150
 F 0 "TP47" H 10353 2205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2150 50  0001 C CNN
 F 3 "~" H 10400 2150 50  0001 C CNN
 	1    10200 2150
 	1    0    0    -1  
@@ -4213,7 +4197,7 @@ U 1 1 5DEF97BA
 P 10200 2050
 F 0 "TP46" H 10353 2105 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 2060 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 2050 50  0001 C CNN
 F 3 "~" H 10400 2050 50  0001 C CNN
 	1    10200 2050
 	1    0    0    -1  
@@ -4224,7 +4208,7 @@ U 1 1 5DEF6948
 P 10200 1950
 F 0 "TP45" H 10353 2005 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10353 1960 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10400 1950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10400 1950 50  0001 C CNN
 F 3 "~" H 10400 1950 50  0001 C CNN
 	1    10200 1950
 	1    0    0    -1  
@@ -4285,7 +4269,7 @@ U 1 1 6007D897
 P 10050 9150
 F 0 "TP41" H 10203 9205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10203 9160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10250 9150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 9150 50  0001 C CNN
 F 3 "~" H 10250 9150 50  0001 C CNN
 	1    10050 9150
 	1    0    0    -1  
@@ -4296,7 +4280,7 @@ U 1 1 600C2427
 P 10050 9250
 F 0 "TP42" H 10203 9305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10203 9260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10250 9250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 9250 50  0001 C CNN
 F 3 "~" H 10250 9250 50  0001 C CNN
 	1    10050 9250
 	1    0    0    -1  
@@ -4307,7 +4291,7 @@ U 1 1 600C263B
 P 10050 9350
 F 0 "TP43" H 10203 9405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10203 9360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10250 9350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 9350 50  0001 C CNN
 F 3 "~" H 10250 9350 50  0001 C CNN
 	1    10050 9350
 	1    0    0    -1  
@@ -4318,7 +4302,7 @@ U 1 1 600C28A3
 P 10050 9450
 F 0 "TP44" H 10203 9505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 10203 9460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10250 9450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 9450 50  0001 C CNN
 F 3 "~" H 10250 9450 50  0001 C CNN
 	1    10050 9450
 	1    0    0    -1  
@@ -4329,7 +4313,7 @@ U 1 1 600C4FD8
 P 7350 9150
 F 0 "TP36" H 7503 9205 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7503 9160 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7550 9150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 9150 50  0001 C CNN
 F 3 "~" H 7550 9150 50  0001 C CNN
 	1    7350 9150
 	-1   0    0    -1  
@@ -4340,7 +4324,7 @@ U 1 1 600C4FDE
 P 7350 9250
 F 0 "TP37" H 7503 9305 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7503 9260 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7550 9250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 9250 50  0001 C CNN
 F 3 "~" H 7550 9250 50  0001 C CNN
 	1    7350 9250
 	-1   0    0    -1  
@@ -4351,7 +4335,7 @@ U 1 1 600C4FE4
 P 7350 9350
 F 0 "TP38" H 7503 9405 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7503 9360 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7550 9350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 9350 50  0001 C CNN
 F 3 "~" H 7550 9350 50  0001 C CNN
 	1    7350 9350
 	-1   0    0    -1  
@@ -4362,7 +4346,7 @@ U 1 1 600C4FEA
 P 7350 9450
 F 0 "TP39" H 7503 9505 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7503 9460 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7550 9450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7550 9450 50  0001 C CNN
 F 3 "~" H 7550 9450 50  0001 C CNN
 	1    7350 9450
 	-1   0    0    -1  
@@ -4536,4 +4520,42 @@ Text Label 10950 9850 1    50   ~ 0
 VLOGIC
 Text Label 11800 9850 1    50   ~ 0
 VMOTOR
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 5D4290A4
+P 4100 7650
+F 0 "J3" H 4150 7867 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 4150 7776 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical_SMD" H 4100 7650 50  0001 C CNN
+F 3 "~" H 4100 7650 50  0001 C CNN
+	1    4100 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6300 3450 7750
+Connection ~ 3450 7750
+Wire Wire Line
+	3450 7750 3450 7900
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5D691343
+P 5350 9850
+F 0 "H1" H 5450 9899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5450 9808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5350 9850 50  0001 C CNN
+F 3 "~" H 5350 9850 50  0001 C CNN
+	1    5350 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D692CEC
+P 5350 9950
+F 0 "#PWR0101" H 5350 9700 50  0001 C CNN
+F 1 "GND" H 5355 9777 50  0000 C CNN
+F 2 "" H 5350 9950 50  0001 C CNN
+F 3 "" H 5350 9950 50  0001 C CNN
+	1    5350 9950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
