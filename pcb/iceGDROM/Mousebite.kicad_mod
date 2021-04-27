@@ -1,0 +1,21 @@
+(module "Mousebite" (layer F.Cu) (tedit 5F4C08E0)
+  (fp_text reference "REF**" (at 0 -3.75 unlocked) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "Mousebite" (at 0 -2.5 unlocked) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_arc (start 4 0) (end 4 -1.5) (angle -180) (layer Dwgs.User) (width 0.12))
+  (fp_arc (start -4 0) (end -4 1.5) (angle -180) (layer Dwgs.User) (width 0.12))
+  (pad "" np_thru_hole circle (at -2.2 -0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at -2.2 0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at -0.733333 -0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at 0.733333 -0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at 2.2 -0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at -0.733333 0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at 0.733333 0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+  (pad "" np_thru_hole circle (at 2.2 0.8 90) (size 1 1) (drill 1) (layers *.Cu *.Mask) (tstamp ede5c2b7-f002-4f2b-9d72-ac33be543a1a))
+)

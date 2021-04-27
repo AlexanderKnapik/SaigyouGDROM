@@ -1,1 +1,7 @@
 obj/
+pcb/iceGDROM/Datasheet
+pcb/iceGDROM/3D/NC
+pcb/iceGDROM/*-bak
+pcb/iceGDROM/Gerber
+"pcb/USB PMOD/Gerbers"
+"pcb/USB PMOD/*-bak"
