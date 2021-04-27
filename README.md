@@ -1,7 +1,7 @@
 SaigyouGDROM
 ========
 
-![](/pictures/saigyougdrom-front.JPG)
+![](/pictures/saigyougdrom.JPG)
 
 SaigyouGDROM is a redesigned hardware implementation for Marcus Comstedt's
 "iceGDROM". The aim of the project is to use the original software and gateware,
