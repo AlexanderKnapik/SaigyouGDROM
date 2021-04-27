@@ -5,7 +5,7 @@ SaigyouGDROM
 
 SaigyouGDROM is a redesigned hardware implementation for Marcus Comstedt's
 "iceGDROM". The aim of the project is to use the original software and gateware,
-but to package the hardware into a compact and complete package.
+but with the hardware as a compact and complete package.
 
 This is currently a work in progress. Although the first revision prototypes have
 been manufactured, there is still a lot to do in regards for testing and
